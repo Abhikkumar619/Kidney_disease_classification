@@ -2,6 +2,7 @@ from src.cnn_classifier.constants import *
 from src.cnn_classifier.utils.common import create_directories , read_yaml
 from src.cnn_classifier import logger
 from src.cnn_classifier.entity.config_entity import DataIngestionConfig
+from src.cnn_classifier.entity.config_entity import PrepareBaseModelConfig
 
 
 class ConfigurationManager:
@@ -24,3 +25,21 @@ class ConfigurationManager:
             unzip_dir=config.unzip_dir
         )
         return data_ingestion_config
+    
+
+    def get_prepare_base_model(self)-> PrepareBaseModelConfig:
+
+        config=self.config.prepare_base_model
+        
+        prepare_base_model=PrepareBaseModelConfig(
+        root_dir=Path(config.root_dir), 
+        base_model_path=Path(config.base_model_path),
+        updated_base_model_path=Path(config.updated_base_model_path),
+
+        params_image_size=self.params.IMAGE_SIZE,
+        params_include_top=self.params.INCLUDE_TOP,
+        params_weight=self.params.WEIGHTS,
+        params_classes=self.params.CLASSES,
+        params_learning_rate=self.params.LEARNING_RATE
+        )
+        return prepare_base_model
