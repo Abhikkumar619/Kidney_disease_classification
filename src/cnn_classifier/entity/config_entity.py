@@ -21,4 +21,18 @@ class PrepareBaseModelConfig:
     params_weight : str
     params_classes: int
     params_learning_rate: int
+
+
+@dataclass(frozen=True)
+class ModelTrainingConfig: 
+    root_dir: Path
+    trained_model_path: Path
+    params_augmentation: bool
+    params_image_size: list
+    params_epochs: int
+    params_batch_size: int
+    training_data: Path
+    final_model_train: Path
+
+
     
