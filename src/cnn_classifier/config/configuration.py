@@ -5,6 +5,7 @@ from src.cnn_classifier.entity.config_entity import DataIngestionConfig
 from src.cnn_classifier.entity.config_entity import PrepareBaseModelConfig
 from src.cnn_classifier.entity.config_entity import ModelTrainingConfig
 import os
+from src.cnn_classifier.entity.config_entity import EvaluationConfig
 
 
 class ConfigurationManager:
@@ -72,5 +73,18 @@ class ConfigurationManager:
             return model_training_config
         except Exception as e: 
             raise e
+        
+    def get_evaluation_config(self)-> EvaluationConfig:
+
+        evaluation_config=EvaluationConfig(
+            path_of_model="artifacts/training/model.h5",
+            training_data="artifacts/data_ingestion/kidney-ct-scan-image",
+            mlflow_uri="https://dagshub.com/Abhikkumar619/Kidney_disease_classification.mlflow",
+            all_params=self.params,
+            params_image_size=self.params.IMAGE_SIZE,
+            params_batch_size=self.params.BATCH_SIZE
+
+        ) 
+        return evaluation_config
             
             

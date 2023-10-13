@@ -30,3 +30,23 @@ conda create -p environment_name python==version.
 
 ## STEPS 2 - Install requirement.txt
 pip install -r requirement.txt
+
+
+
+### dagshub
+
+MLFLOW_TRACKING_URI=https://dagshub.com/Abhikkumar619/Kidney_disease_classification.mlflow \
+MLFLOW_TRACKING_USERNAME=Abhikkumar619 \
+MLFLOW_TRACKING_PASSWORD=b515b18fe70cac23bd1c8591a7c54e188845b00c \
+python script.py
+
+Run this to exort as env variabels: 
+
+```bash
+
+export MLFLOW_TRACKING_URI=https://dagshub.com/Abhikkumar619/Kidney_disease_classification.mlflow 
+
+export MLFLOW_TRACKING_USERNAME=Abhikkumar619
+
+export MLFLOW_TRACKING_PASSWORD=b515b18fe70cac23bd1c8591a7c54e188845b00c
+

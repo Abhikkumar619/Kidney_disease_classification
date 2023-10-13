@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/TheBritishCollege/DataScience/Kidney_disease_classification/mlruns/0/d236476c1b6243188a7a6e870f712834/artifacts
+end_time: 1697183750638
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: d236476c1b6243188a7a6e870f712834
+run_name: aged-deer-412
+run_uuid: d236476c1b6243188a7a6e870f712834
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697183662499
+status: 3
+tags: []
+user_id: abish

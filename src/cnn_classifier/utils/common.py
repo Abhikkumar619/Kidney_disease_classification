@@ -35,14 +35,15 @@ def create_directories(path_to_directories  : list, verbose=True):
 
 
 @ensure_annotations
-def save_json(path: Path, data: dict): 
+def save_json(path: Path, data: dict):
     """
-    save json data
+    Save JSON data to a file.
     """
-    with open(path,'w') as f:
-        json.dump(f, data)
-    
-    logger.info(f"Json file save at {path}")
+    with open(path, "w") as json_file:
+        json.dump(data, json_file, indent=4)  # 'indent' is optional and makes the JSON file more readable
+
+    # logger.info(f"Json file saved at {path}")
+
 
 
 @ensure_annotations
