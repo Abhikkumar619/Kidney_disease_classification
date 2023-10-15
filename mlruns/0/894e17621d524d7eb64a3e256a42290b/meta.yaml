@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/TheBritishCollege/DataScience/Kidney_disease_classification/mlruns/0/894e17621d524d7eb64a3e256a42290b/artifacts
+end_time: 1697206732711
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 894e17621d524d7eb64a3e256a42290b
+run_name: traveling-cat-801
+run_uuid: 894e17621d524d7eb64a3e256a42290b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697206670982
+status: 3
+tags: []
+user_id: abish

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/TheBritishCollege/DataScience/Kidney_disease_classification/mlruns/0/822e5bbaa3374264920cf785ba5888aa/artifacts
+end_time: 1697206670927
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 822e5bbaa3374264920cf785ba5888aa
+run_name: learned-gull-949
+run_uuid: 822e5bbaa3374264920cf785ba5888aa
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697206670384
+status: 3
+tags: []
+user_id: abish
